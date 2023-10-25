@@ -1,4 +1,7 @@
 import Container from '../Container';
+import Logo from './Logo';
+import MenuDropdown from './MenuDropdown';
+import Search from './Search';
 
 const Navbar = () => {
     return (
@@ -6,9 +9,9 @@ const Navbar = () => {
             <div className='py-4 border-b-[1px]'>
                 <Container>
                     <div className='flex flex-row justify-between gap-3 md:gap-0'>
-                    <div>logo</div>
-                    <div>search</div>
-                    <div>menu</div>
+                     <Logo></Logo>
+                     <Search></Search>
+                     <MenuDropdown></MenuDropdown>
                     </div>       
                 </Container>
             </div>
