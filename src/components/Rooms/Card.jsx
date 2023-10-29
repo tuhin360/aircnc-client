@@ -1,9 +1,10 @@
+import { Link } from "react-router-dom";
 import HeartButton from "../Button/HeartButton";
 
 const Card = ({room}) => {
   return (
     <div className="col-span-1 cursor-pointer group">
-      <div className="flex flex-col gap-2 w-full">
+      <Link to={`/room/${1}`} className="flex flex-col gap-2 w-full">
         <div
           className="
             aspect-square 
@@ -41,7 +42,7 @@ const Card = ({room}) => {
           <div className="font-semibold">$ {room.price}</div>
           <div className="font-light">night</div>
         </div>
-      </div>
+      </Link>
     </div>
   );
 };
