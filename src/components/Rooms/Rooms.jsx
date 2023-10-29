@@ -46,7 +46,11 @@ const Rooms = () => {
         </div>
       ) : (
         <div className="pt-12">
-          
+          <Heading
+            title="No Room Available in this category!"
+            subtitle="Please Select Other Categories"
+            center={true}
+          ></Heading>
         </div>
       )}
     </Container>
