@@ -38,6 +38,7 @@ const SignUp = () => {
       .then((res) => res.json())
       .then((ImageData) => {
         const imageUrl = ImageData.data.display_url;
+        
         createUser(email, password)
           .then((result) => {
             updateUserProfile(name, imageUrl)
