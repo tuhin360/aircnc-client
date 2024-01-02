@@ -1,12 +1,10 @@
-import { json } from "react-router-dom";
-
 // save a user to database
 export const saveUser = (user) => {
   const currentUser = {
     email: user.email,
   };
 
-  fetch(`http://localhost:5000/users/${user?.email}`, {
+  fetch(`${import.meta.env.VITE_API_URL}/users/${user?.email}`, {
     method: "PUT",
     headers: {
       "content-type": "application/json",

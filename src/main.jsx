@@ -6,6 +6,9 @@ import { router } from './routes/Routes'
 import { Toaster } from 'react-hot-toast'
 import AuthProvider from './providers/Authprovider'
 
+import 'react-date-range/dist/styles.css'
+import 'react-date-range/dist/theme/default.css'
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <AuthProvider>
     <Toaster />
