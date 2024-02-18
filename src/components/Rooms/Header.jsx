@@ -1,16 +1,16 @@
 import Heading from "../Heading/Heading";
 
-const Header = () => {
+const Header = ({roomData}) => {
   return (
     <>
       <Heading
-        title="Veluvana Bali - Owl Bamboo House"
-        subtitle="Sidemen, Indonesia"
+        title={roomData.title}
+        subtitle={roomData.subtitle}
       ></Heading>
       <div className="w-full md:h-[60] overflow-hidden rounded-xl">
         <img
           className="object-cover w-full"
-          src="https://i.ibb.co/wW1HbQH/pexels-jason-boyd-3209049.jpg"
+          src={roomData.image}
           alt="header image"
         />
       </div>

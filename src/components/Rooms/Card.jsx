@@ -4,7 +4,7 @@ import HeartButton from "../Button/HeartButton";
 const Card = ({room}) => {
   return (
     <div className="col-span-1 cursor-pointer group">
-      <Link to={`/room/${1}`} className="flex flex-col gap-2 w-full">
+      <Link to={`/room/${room._id}`} className="flex flex-col gap-2 w-full">
         <div
           className="
             aspect-square 
